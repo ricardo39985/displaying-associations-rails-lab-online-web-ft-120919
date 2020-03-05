@@ -1,0 +1,7 @@
+<ul>
+<p><%=@songs.size%></p>
+<% @songs.each do |song| %>
+  <li><%=link_to "#{song.artist.name} - #{song.title}", song%></li>
+  <li><%=link_to song.artist.name, song.artist%></li>
+<% end %>
+</ul>
